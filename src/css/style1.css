@@ -1,0 +1,163 @@
+:root {
+  /* Enhanced Color Palette */
+  --primary: #ffa520;        /* Vibrant orange (original accent) */
+  --primary-dark: #e6951c;   /* Darker orange for hover states */
+  --dark: #232939;           /* Deep blue-gray background (original) */
+  --darker: #1a1f2e;         /* Slightly darker for contrast */
+  --light: #f8fafc;          /* Off-white text (original) */
+  --accent-blue: #3b82f6;    /* Vibrant blue for secondary accents */
+  --card-bg: #1e2435;        /* Dark blue-gray for cards (original) */
+  --text-muted: #94a3b8;     /* Subdued text color */
+  
+  /* New decorative colors */
+  --success: #10b981;        /* For positive indicators */
+  --warning: #f59e0b;        /* For alerts */
+  --error: #ef4444;          /* For errors */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--dark);
+  color: var(--light);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.header-logo {
+  filter: brightness(0) invert(1);
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+.header-logo:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Typography */
+.page-title {
+  font-weight: 600;
+  color: var(--light);
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+  letter-spacing: -0.5px;
+}
+
+.page-title::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--primary);
+  border-radius: 3px;
+}
+
+/* Card System */
+.profile-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  height: 100%;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+              0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-color: rgba(255, 165, 32, 0.3);
+}
+
+.card-body {
+  padding: 1.75rem;
+}
+
+.card-title {
+  font-weight: 600;
+  color: var(--light);
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.card-text {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+/* Buttons */
+.btn-profile {
+  background-color: var(--primary);
+  color: #01001d;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-profile:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(255, 165, 32, 0.3);
+}
+
+/* Layout */
+.team-section {
+  padding: 3rem 0;
+  position: relative;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header-logo {
+    width: 180px;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .page-title {
+    font-size: 1.75rem;
+  }
+  
+  .btn-profile {
+    padding: 8px 20px;
+  }
+}
+
+/* New Utility Classes */
+.text-accent {
+  color: var(--primary);
+}
+
+.bg-accent {
+  background-color: var(--primary);
+}
+
+.border-accent {
+  border-color: var(--primary);
+}
+
+.date-badge {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: var(--accent-blue);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}

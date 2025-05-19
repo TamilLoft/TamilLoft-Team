@@ -1,130 +1,622 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arockia Antony Luvin A | Financial Professional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/6c1a8a2860.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/6c1a8a2860.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../src/css/style2.css" />
+  </head>
 
-</head>
+  <body>
+    <!-- Header Section -->
+    <header class="py-4 px-6 flex justify-end">
+      <img
+        class="header-logo"
+        src="../src/uiImg/titel_Logo1.png"
+        alt="Company Logo"
+      />
+    </header>
 
-<body>
-    <section class="text-white bg-[#232939]  ">
-        <!-- herad of the image Logo -->
-        <div class="flex justify-end"><img class="md:w-1/4  p-6" src="../src/luvin/titel_Logo1.png"></div>
-        <div class="flex justify-between lg:text-xl bg-transparent p-2 items-center">
-
-        </div>
-        </div>
-        <div class="lg:flex lg:p-6 py-3 items-center flex lg:justify-center ">
-            <div class="w-1/4 pr-9 hidden lg:block">
-                <!-- profile Img -->
-                <img src="../src/luvin/luvin.jpg" class="rounded-lg " />
-
-            </div>
-            <div class="3/4 text-[#ffa520] pl-4">
-                <h3 class="capitalize text-3xl font-bold md:text-6xl ">Arockia Antony Luvin A</h3>
-                <p class="capitalize ">Financial</p>
-                <div class="mt-2 text-2xl text-[#ffa520]">
-                    <a target="_blank" href="https://github.com/Luvin-Max">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a target="_blank" href="https://www.linkedin.com/in/luvin-a-0799b9247/">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-
-                </div>
-            </div>
-
+    <!-- Hero Section -->
+    <section class="hero-section py-12 px-6 lg:px-12">
+      <div
+        class="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-12"
+      >
+        <!-- Profile Image -->
+        <div class="lg:w-1/4 flex justify-center">
+          <img
+            src="../src/stafImg/luvin.jpg"
+            alt="Arockia Antony Luvin A"
+            class="profile-image w-64 h-64 lg:w-80 lg:h-80 object-cover rounded-full"
+          />
         </div>
 
+        <!-- Profile Info -->
+        <div class="lg:w-3/4 text-center lg:text-left">
+          <h1 class="text-4xl md:text-6xl font-bold text-[#ffa520] mb-2">
+            Arockia Antony Luvin A
+          </h1>
+          <h2 class="text-2xl md:text-3xl font-semibold text-white mb-6">
+            Financial Professional
+          </h2>
+
+          <div class="flex justify-center lg:justify-start gap-6 text-3xl mb-8">
+            <a
+              href="https://github.com/Luvin-Max"
+              target="_blank"
+              class="social-icon"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/luvin-a-0799b9247/"
+              target="_blank"
+              class="social-icon"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:a.luvin20@gmail.com" class="social-icon">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+
+          <div class="max-w-2xl mx-auto lg:mx-0">
+            <p class="text-lg text-gray-300 mb-6">
+              Dedicated financial professional with expertise in financial
+              analysis and strategic planning. Combines technical skills with
+              financial acumen to deliver data-driven solutions.
+            </p>
+            <a
+              href="#contact"
+              class="bg-[#ffa520] hover:bg-[#e6951c] text-[#232939] font-bold py-3 px-8 rounded-full transition-all duration-300 inline-block"
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="  text-white bg-[#232939]">
-        <div class="flex justify-center">
-            <div id="about" class="relative">
-                <h2 class="font-black lg:text-7xl text-5xl uppercase font-sans opacity-25 " style="color: #ffa520">
-                    DETAILS</h2>
-                <p
-                    class="font-extrabold lg:text-4xl text-blue text-2xl absolute lg:left-12 lg:top-5 top-3 left-10 uppercase">
-                    About me
+
+    <!-- About Section -->
+    <section class="py-16 px-6 lg:px-12 bg-[#1e2435] relative overflow-hidden">
+      <div
+        class="absolute -right-20 -top-20 text-9xl font-black uppercase opacity-5 watermark-text"
+      >
+        Details
+      </div>
+
+      <div class="container mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-white mb-12 section-title"
+        >
+          About Me
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Personal Information Card -->
+          <div
+            class="info-card p-8 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-[#ffa520]/20"
+          >
+            <div class="flex items-center gap-4 mb-6">
+              <div class="p-2 bg-[#ffa520]/10 rounded-full">
+                <i class="fas fa-user text-2xl text-[#ffa520]"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-[#ffa520]">
+                Personal Information
+              </h3>
+            </div>
+
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <i class="fas fa-id-card mt-1 text-[#ffa520] text-sm"></i>
+                <div>
+                  <p class="font-bold text-white">Full Name</p>
+                  <p class="text-gray-300">Arockia Antony Luvin A</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <i class="fas fa-briefcase mt-1 text-[#ffa520] text-sm"></i>
+                <div>
+                  <p class="font-bold text-white">Position</p>
+                  <p class="text-gray-300">Financial Analyst</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <i class="fas fa-id-badge mt-1 text-[#ffa520] text-sm"></i>
+                <div>
+                  <p class="font-bold text-white">Staff ID</p>
+                  <p class="text-gray-300">TL00124</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <i class="fas fa-phone-alt mt-1 text-[#ffa520] text-sm"></i>
+                <div>
+                  <p class="font-bold text-white">Contact</p>
+                  <p class="text-gray-300">+91 8925356605</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <i class="fas fa-envelope mt-1 text-[#ffa520] text-sm"></i>
+                <div>
+                  <p class="font-bold text-white">Email</p>
+                  <p class="text-gray-300">a.luvin20@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Details Card -->
+          <div
+            class="info-card p-8 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-[#ffa520]/20"
+          >
+            <div class="flex items-center gap-4 mb-6">
+              <div class="p-2 bg-[#ffa520]/10 rounded-full">
+                <i class="fas fa-laptop-code text-2xl text-[#ffa520]"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-[#ffa520]">
+                Professional Details
+              </h3>
+            </div>
+
+            <div class="space-y-6">
+              <!-- Education -->
+              <div class="professional-item">
+                <div class="flex items-center gap-3 text-white">
+                  <i class="fas fa-graduation-cap text-[#ffa520]"></i>
+                  <span class="font-bold">Education</span>
+                </div>
+                <p class="text-gray-300 ml-7 mt-1">
+                  Bachelor's in Computer Science (Specialization in
+                  Cybersecurity)
                 </p>
-            </div>
-        </div>
+              </div>
 
-    </section>
-    <section class="" style="background-color: #232939;">
+              <!-- Affiliation -->
+              <div class="professional-item">
+                <div class="flex items-center gap-3 text-white">
+                  <i class="fas fa-users text-[#ffa520]"></i>
+                  <span class="font-bold">TamilLoft Affiliation</span>
+                </div>
+                <p class="text-gray-300 ml-7 mt-1">
+                  Founding Member & Core Contributor (2024-Present)
+                </p>
+              </div>
 
-        <div id="card" class="container mx-auto py-8 px-4 ">
-
-
-            <div class="max-w-4xl mx-auto border-white border-2 rounded-lg overflow-hidden shadow-lg p-6 "
-                style="background-color:#ffa520 ; color: #01001d">
-
-
-                <div class=" top-0 right-0 mt-4 mr-4 ">
-                    <img src="../src/luvin/luvin.jpg" alt="Profile Photo"
-                        class="w-40 h-40 lg:hidden block border-2 object-cover rounded-full ">
+              <!-- Expertise Sections with Accordion Effect -->
+              <div class="space-y-4">
+                <!-- Core Expertise -->
+                <div class="expertise-section">
+                  <div class="flex items-center gap-3 cursor-pointer">
+                    <i class="fas fa-cogs text-[#ffa520]"></i>
+                    <span class="font-bold text-white"
+                      >Core Technical Expertise</span
+                    >
+                    <i
+                      class="fas fa-chevron-down ml-auto text-xs text-[#ffa520] transition-transform duration-300"
+                    ></i>
+                  </div>
+                  <ul
+                    class="list-disc pl-10 text-gray-300 space-y-2 mt-3 expertise-content"
+                  >
+                    <li>Full-stack development (React.js, Node.js, MongoDB)</li>
+                    <li>
+                      Cross-platform mobile development (React Native, Android
+                      Studio)
+                    </li>
+                    <li>AWS cloud architecture and deployment</li>
+                    <li>Server management (Email, PDF, Node.js servers)</li>
+                    <li>REST API design and implementation</li>
+                    <li>Cryptography and blockchain applications</li>
+                  </ul>
                 </div>
 
-
-                <div class="mt-8 md:mt-0 text-[#232939] ">
-                    <div class="flex justify-center">
-                        <h2 class="text-2xl font-bold mb-4">PERSONAL INFORMATION</h2>
-
-                    </div>
-
-
-
-
-                    <div class="mb-6">
-                        <div class="grid  gap-x-4">
-                            <div class="font-semibold text-base"><span class="font-bold text-lg">Name:</span> Arockia
-                                Antony Luvin A
-                            </div><br>
-                            <div class="font-semibold text-base"><span class="font-bold text-lg">Designation:</span>
-                                Financial</div><br>
-                            <div class="font-semibold text-base"><span class="font-bold text-lg">Staff ID:</span>
-                                TL00124
-                            </div><br>
-                            <div class="font-semibold text-base"><span class="font-bold text-lg">Contact Number:</span>
-                                8925356605</div><br>
-                            <div class="font-semibold text-base"><span class="font-bold text-lg">Email ID: </span>
-                                a.luvin20@gmail.com</div><br>
-
-                        </div>
-                    </div>
-
-
-                    <div class="mb-6">
-                        <h3 class="text-2xl font-bold mb-2">Work Experience</h3>
-                        <div class=" gap-x-4">
-                            <div class="font-semibold text-base"><span class="font-bold text-lg">Educational
-                                    Qualification:</span> Bachelor's in Computer Science</div><br>
-                            <div class="font-semibold text-base"><span class="font-bold text-lg">Date of Joining:</span>
-                                July 22, 2024</div><br>
-                            <div class="font-semibold text-base"><span class="font-bold text-lg">
-                                    Experience:</span> I have build a responsive e-commerce website using React.js, Tailwind CSS, Node.js and MongoDB.</div>
-                            <br>
-                            <div class="font-semibold text-base"><span class="font-bold text-lg">
-                                    Skills:</span> HTML, CSS, JavaScript, React js, Node js, Java, Python, MongoDB</div>
-                            <br>
-                        </div>
-                    </div>
-
+                <!-- Security -->
+                <div class="expertise-section">
+                  <div class="flex items-center gap-3 cursor-pointer">
+                    <i class="fas fa-shield-alt text-[#ffa520]"></i>
+                    <span class="font-bold text-white"
+                      >Security & Infrastructure</span
+                    >
+                    <i
+                      class="fas fa-chevron-down ml-auto text-xs text-[#ffa520] transition-transform duration-300"
+                    ></i>
+                  </div>
+                  <ul
+                    class="list-disc pl-10 text-gray-300 space-y-2 mt-3 expertise-content"
+                  >
+                    <li>Cybersecurity protocols implementation</li>
+                    <li>Secure system architecture design</li>
+                    <li>Penetration testing and vulnerability assessment</li>
+                    <li>Data encryption solutions</li>
+                  </ul>
                 </div>
 
+                <!-- Leadership -->
+                <div class="expertise-section">
+                  <div class="flex items-center gap-3 cursor-pointer">
+                    <i class="fas fa-chess-king text-[#ffa520]"></i>
+                    <span class="font-bold text-white">Leadership Roles</span>
+                    <i
+                      class="fas fa-chevron-down ml-auto text-xs text-[#ffa520] transition-transform duration-300"
+                    ></i>
+                  </div>
+                  <ul
+                    class="list-disc pl-10 text-gray-300 space-y-2 mt-3 expertise-content"
+                  >
+                    <li>
+                      Documentation Architect (Standardizing technical
+                      documentation)
+                    </li>
+                    <li>
+                      Financial Systems Analyst (Financial tool development)
+                    </li>
+                    <li>
+                      Office Management Specialist (Streamlining operations)
+                    </li>
+                    <li>
+                      Managing Director (Strategic planning and execution)
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Projects -->
+                <div class="expertise-section">
+                  <div class="flex items-center gap-3 cursor-pointer">
+                    <i class="fas fa-project-diagram text-[#ffa520]"></i>
+                    <span class="font-bold text-white">Notable Projects</span>
+                    <i
+                      class="fas fa-chevron-down ml-auto text-xs text-[#ffa520] transition-transform duration-300"
+                    ></i>
+                  </div>
+                  <ul
+                    class="list-disc pl-10 text-gray-300 space-y-2 mt-3 expertise-content"
+                  >
+                    <li>Cryptography-based secure communication platform</li>
+                    <li>AWS-hosted enterprise document management system</li>
+                    <li>Automated financial reporting toolkit</li>
+                    <li>Cross-platform mobile apps for business operations</li>
+                    <li>Secure REST APIs for sensitive data handling</li>
+                  </ul>
+                </div>
+
+                <!-- Achievements -->
+                <div class="expertise-section">
+                  <div class="flex items-center gap-3 cursor-pointer">
+                    <i class="fas fa-trophy text-[#ffa520]"></i>
+                    <span class="font-bold text-white"
+                      >Recent Achievements</span
+                    >
+                    <i
+                      class="fas fa-chevron-down ml-auto text-xs text-[#ffa520] transition-transform duration-300"
+                    ></i>
+                  </div>
+                  <ul
+                    class="list-disc pl-10 text-gray-300 space-y-2 mt-3 expertise-content"
+                  >
+                    <li>
+                      Optimized server infrastructure reducing costs by 30%
+                    </li>
+                    <li>
+                      Implemented cybersecurity measures preventing 100+
+                      potential breaches
+                    </li>
+                    <li>
+                      Developed TamilLoft's documentation standards now used
+                      company-wide
+                    </li>
+                    <li>Led migration of core systems to AWS cloud</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Skills -->
+        <div class="info-card p-8 rounded-xl md:col-span-2 mt-5">
+          <h3 class="text-2xl font-bold text-[#ffa520] mb-6">
+            Technical Skills
+          </h3>
+
+          <div class="flex flex-wrap gap-3">
+            <span class="skill-badge px-4 py-2 rounded-full text-sm font-medium"
+              >HTML5</span
+            >
+            <span class="skill-badge px-4 py-2 rounded-full text-sm font-medium"
+              >CSS3</span
+            >
+            <span class="skill-badge px-4 py-2 rounded-full text-sm font-medium"
+              >JavaScript</span
+            >
+            <span class="skill-badge px-4 py-2 rounded-full text-sm font-medium"
+              >React.js</span
+            >
+            <span class="skill-badge px-4 py-2 rounded-full text-sm font-medium"
+              >Node.js</span
+            >
+            <span class="skill-badge px-4 py-2 rounded-full text-sm font-medium"
+              >MongoDB</span
+            >
+            <span class="skill-badge px-4 py-2 rounded-full text-sm font-medium"
+              >Java</span
+            >
+            <span class="skill-badge px-4 py-2 rounded-full text-sm font-medium"
+              >Python</span
+            >
+            <span class="skill-badge px-4 py-2 rounded-full text-sm font-medium"
+              >Financial Analysis</span
+            >
+            <span class="skill-badge px-4 py-2 rounded-full text-sm font-medium"
+              >Data Visualization</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="py-16 px-6 lg:px-12 bg-[#1e2435] relative overflow-hidden">
+      <div
+        class="absolute -right-20 -top-20 text-9xl font-black uppercase opacity-5 watermark-text"
+      >
+        Success
+      </div>
+
+      <div class="container mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-white mb-12 section-title"
+        >
+          Key Achievements
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Achievement 1 - With Date, Badge, and Project Link -->
+          <div class="achievement-card p-6 rounded-lg flex items-start gap-4">
+            <div class="achievement-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="w-full">
+              <div class="flex justify-between items-start">
+                <h3 class="text-xl font-bold text-white mb-2">
+                  E-Commerce Platform
+                </h3>
+                <span class="date-tag px-3 py-1 rounded-full text-xs font-bold"
+                  >Q2 2023</span
+                >
+              </div>
+              <p class="text-gray-300 mb-3">
+                Built a full-stack e-commerce solution using
+                <strong>MERN stack</strong>, increasing client revenue by
+                <strong>40%</strong>.
+              </p>
+              <div class="flex flex-wrap gap-3 items-center">
+                <a
+                  href="https://github.com/Luvin-Max/ecommerce-project"
+                  target="_blank"
+                  class="project-link px-3 py-1 rounded-full text-sm hover:bg-[#ffa520] hover:text-[#232939] transition"
+                >
+                  <i class="fab fa-github mr-1"></i> GitHub Repo
+                </a>
+                <a
+                  href="https://luvin-ecommerce-demo.com"
+                  target="_blank"
+                  class="project-link px-3 py-1 rounded-full text-sm hover:bg-[#ffa520] hover:text-[#232939] transition"
+                >
+                  <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Achievement 2 - With Certification Badge -->
+          <div class="achievement-card p-6 rounded-lg flex items-start gap-4">
+            <div class="achievement-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <div class="w-full">
+              <div class="flex justify-between items-start">
+                <h3 class="text-xl font-bold text-white mb-2">
+                  Certified Financial Analyst
+                </h3>
+                <span class="date-tag px-3 py-1 rounded-full text-xs font-bold"
+                  >Nov 2023</span
+                >
+              </div>
+              <p class="text-gray-300 mb-3">
+                Earned CFA Level I certification with distinction (top 10%
+                globally).
+              </p>
+              <div class="flex items-center gap-3">
+                <div class="mt-4 flex flex-wrap gap-3">
+                  <!-- CFA Badge -->
+                  <div
+                    class="flex items-center bg-blue-900/30 text-blue-200 border border-blue-700 px-3 py-1 rounded-full text-sm"
+                  >
+                    <svg
+                      class="w-4 h-4 mr-2"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    CFA Certified
+                  </div>
+
+                  <!-- Top Performer -->
+                  <div
+                    class="flex items-center bg-[#ffa520]/20 text-[#ffa520] border border-[#ffa520] px-3 py-1 rounded-full text-sm"
+                  >
+                    <svg
+                      class="w-4 h-4 mr-2"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    Top Performer
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Achievement 3 - With Project Link -->
+          <div class="achievement-card p-6 rounded-lg flex items-start gap-4">
+            <div class="achievement-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="w-full">
+              <div class="flex justify-between items-start">
+                <h3 class="text-xl font-bold text-white mb-2">
+                  Financial Dashboard
+                </h3>
+                <span class="date-tag px-3 py-1 rounded-full text-xs font-bold"
+                  >Q1 2024</span
+                >
+              </div>
+              <p class="text-gray-300 mb-3">
+                Python-powered dashboard reduced reporting time by
+                <strong>65%</strong> using Pandas and Plotly.
+              </p>
+              <a
+                href="https://github.com/Luvin-Max/financial-dashboard"
+                target="_blank"
+                class="project-link px-3 py-1 rounded-full text-sm inline-block hover:bg-[#ffa520] hover:text-[#232939] transition"
+              >
+                <i class="fab fa-github mr-1"></i> View Source Code
+              </a>
+            </div>
+          </div>
+
+          <!-- Achievement 4 - With Badge -->
+          <div class="achievement-card p-6 rounded-lg flex items-start gap-4">
+            <div class="achievement-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="w-full">
+              <div class="flex justify-between items-start">
+                <h3 class="text-xl font-bold text-white mb-2">
+                  Employee of the Year
+                </h3>
+                <span class="date-tag px-3 py-1 rounded-full text-xs font-bold"
+                  >Dec 2023</span
+                >
+              </div>
+              <p class="text-gray-300 mb-3">
+                Recognized for developing internal tools that saved
+                <strong>100+ work hours/month</strong>.
+              </p>
+              <div
+                class="inline-flex items-center bg-gradient-to-r from-yellow-500 to-yellow-300 text-black px-4 py-2 rounded-lg font-bold mt-2"
+              >
+                <svg
+                  class="w-5 h-5 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                Top Performer 2023
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 lg:px-12 bg-[#232939]">
+      <div class="container mx-auto max-w-4xl">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-white mb-12 section-title"
+        >
+          Get In Touch
+        </h2>
+
+        <div class="info-card p-8 rounded-xl">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-bold text-[#ffa520] mb-4">
+                Contact Information
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-start gap-3">
+                  <i class="fas fa-phone mt-1 text-[#ffa520]"></i>
+                  <div>
+                    <p class="font-medium text-white">Phone</p>
+                    <p class="text-gray-300">+91 8925356605</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <i class="fas fa-envelope mt-1 text-[#ffa520]"></i>
+                  <div>
+                    <p class="font-medium text-white">Email</p>
+                    <p class="text-gray-300">a.luvin20@gmail.com</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
+            <div>
+              <h3 class="text-xl font-bold text-[#ffa520] mb-4">
+                Professional Networks
+              </h3>
+              <div class="flex gap-4">
+                <a
+                  href="https://www.linkedin.com/in/luvin-a-0799b9247/"
+                  target="_blank"
+                  class="bg-[#0077b5] hover:bg-[#006097] text-white p-3 rounded-full transition-all duration-300"
+                >
+                  <i class="fab fa-linkedin-in text-xl"></i>
+                </a>
+                <a
+                  href="https://github.com/Luvin-Max"
+                  target="_blank"
+                  class="bg-gray-800 hover:bg-gray-700 text-white p-3 rounded-full transition-all duration-300"
+                >
+                  <i class="fab fa-github text-xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-</body>
 
+    <!-- Footer -->
+    <footer class="py-6 px-6 bg-[#1a1f2e] text-center">
+      <p class="text-gray-400">&copy; 2024 TamilLoft. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".expertise-section").forEach((section) => {
+        const header = section.querySelector("div:first-child");
+        header.addEventListener("click", () => {
+          section.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
 </html>

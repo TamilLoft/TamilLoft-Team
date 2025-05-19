@@ -1,0 +1,169 @@
+ :root {
+        --primary: #ffa520;
+        --dark: #232939;
+        --light: #f8fafc;
+        --accent: #3b82f6;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--dark);
+        color: var(--light);
+      }
+
+      .header-logo {
+        filter: brightness(0) invert(1);
+        width: 180px;
+        transition: all 0.3s ease;
+      }
+
+      .header-logo:hover {
+        transform: scale(1.05);
+      }
+
+      .hero-section {
+        background: linear-gradient(135deg, var(--dark) 0%, #1a1f2e 100%);
+      }
+
+      .profile-image {
+        border: 4px solid var(--primary);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .profile-image:hover {
+        transform: scale(1.03);
+      }
+
+      .section-title {
+        position: relative;
+        display: inline-block;
+      }
+
+      .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 50px;
+        height: 3px;
+        background: var(--primary);
+      }
+
+      .info-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .info-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.2);
+      }
+
+      .skill-badge {
+        background: rgba(255, 165, 32, 0.2);
+        color: var(--primary);
+      }
+
+      .social-icon {
+        transition: all 0.3s ease;
+        color: var(--primary);
+      }
+
+      .social-icon:hover {
+        color: var(--light);
+        transform: scale(1.2);
+      }
+
+      .watermark-text {
+        color: rgba(255, 255, 255, 0.03);
+        pointer-events: none;
+        user-select: none;
+      }
+      .achievement-card {
+        background: rgba(255, 255, 255, 0.05);
+        border-left: 4px solid var(--primary);
+        transition: all 0.3s ease;
+      }
+
+      .achievement-card:hover {
+        transform: translateX(5px);
+        background: rgba(255, 165, 32, 0.1);
+      }
+
+      .achievement-icon {
+        color: var(--primary);
+        font-size: 1.5rem;
+      }
+      .certification-badge {
+        height: 50px;
+        transition: all 0.3s ease;
+      }
+      .certification-badge:hover {
+        transform: scale(1.1);
+      }
+      .project-link {
+        background: rgba(255, 165, 32, 0.2);
+        border: 1px solid var(--primary);
+      }
+      .date-tag {
+        background: rgba(59, 130, 246, 0.2);
+        color: var(--accent);
+      }
+      @media (max-width: 768px) {
+        .header-logo {
+          width: 140px;
+        }
+
+        .profile-image {
+          width: 160px;
+          height: 160px;
+        }
+      }
+
+
+
+/* ------------------------------ */
+.info-card {
+    background: linear-gradient(145deg, #1e2435 0%, #232939 100%);
+    border: 1px solid rgba(255, 165, 32, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .info-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 165, 32, 0.3);
+  }
+  
+  .professional-item {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .expertise-section {
+    background: rgba(30, 36, 53, 0.5);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .expertise-section:hover {
+    background: rgba(30, 36, 53, 0.8);
+  }
+  
+  .expertise-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .expertise-section.active .expertise-content {
+    max-height: 500px; /* Adjust based on content */
+  }
+  
+  .expertise-section.active .fa-chevron-down {
+    transform: rotate(180deg);
+  }
